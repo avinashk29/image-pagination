@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "diynatural-d92dc": {
+      "hosting": {
+        "image-project": [
+          "diynatural-d92dc"
+        ]
+      }
+    }
+  }
+}

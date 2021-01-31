@@ -1,0 +1,18 @@
+<!-- <select class="selectpicker">
+  <option value="0">Mustard</option>
+  <option value="1">Ketchup</option>
+  <option value="2">Relish</option>
+</select> -->
+<div class="button-group filters-button-group">
+
+  <button class="button" (click)="onPrevious()" >PREVIOUS</button>
+  <button class="button" (click)="onNext()">NEXT</button>
+  <button class="button" routerLink="search">SEARCH</button>
+  <button class="button" (click)="onReset()">RESET</button>
+
+</div>
+<section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+  <article  *ngFor="let image of imagesArray">
+    <img alt="" appLazyLoad  [src]="image.urls.regular"  class="img-responsive" />
+  </article>
+  </section>
